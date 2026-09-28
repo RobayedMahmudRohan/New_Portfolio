@@ -1,10 +1,14 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
-import About from './components/About'
-import Skills from './components/Skills'
+import Education from './components/Education'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Publications from './components/Publications'
+import Recognitions from './components/Recognitions'
+import Skills from './components/Skills'
+import Interests from './components/Interests'
+import Links from './components/Links'
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 import './App.css'
 
 function App() {
@@ -16,12 +20,16 @@ function App() {
       <Header />
       <main id="main-content">
         <Hero />
-        <About />
-        <Skills />
+        <Education />
         <Projects />
-        <Contact />
+        <Publications />
+        <Recognitions />
+        <Skills />
+        <Interests />
+        <Links />
       </main>
       <Footer />
+      <BackToTop />
     </>
   )
 }

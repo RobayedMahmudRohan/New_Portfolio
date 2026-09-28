@@ -1,17 +1,24 @@
-import { skills } from '../data/skills'
+import { skillGroups } from '../data/skills'
+import Section from './Section'
 
 function Skills() {
   return (
-    <section id="skills" className="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Skills</h2>
-      <ul className="skills__list">
-        {skills.map((skill) => (
-          <li key={skill} className="skills__item">
-            {skill}
-          </li>
+    <Section id="skills" title="Skills" hint="Core backend & full-stack toolkit">
+      <div className="cards">
+        {skillGroups.map((group) => (
+          <div key={group.title} className="card">
+            <h3>{group.title}</h3>
+            <ul className="tags">
+              {group.skills.map((skill) => (
+                <li key={skill} className="tag">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
-      </ul>
-    </section>
+      </div>
+    </Section>
   )
 }
 

@@ -1,20 +1,16 @@
 import { projects } from '../data/projects'
 import ProjectCard from './ProjectCard'
+import Section from './Section'
 
 function Projects() {
   return (
-    <section
-      id="projects"
-      className="projects"
-      aria-labelledby="projects-heading"
-    >
-      <h2 id="projects-heading">Projects</h2>
-      <ul className="projects__list">
+    <Section id="projects" title="Projects" hint="Selected works">
+      <ul className="cards">
         {projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
       </ul>
-    </section>
+    </Section>
   )
 }
 

@@ -3,7 +3,7 @@ function Footer() {
 
   return (
     <footer className="site-footer">
-      <p>&copy; {year} Robayed Mahmud Rohan. All rights reserved.</p>
+      <p>&copy; {year} Robayed Mahmud Rohan</p>
     </footer>
   )
 }
